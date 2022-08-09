@@ -6,20 +6,23 @@
 <!-- Navigation-->
 {% include "partial/partnav.html" %}
 
-<!-- 변호사 소개 -->
-<section class="page-section" id="aa_members">
-    <div class="container px-4 px-lg-5" id="members_container">
-        <h2 class="text-center mt-0">변호사 소개</h2>
+<!-- 변호사 소개 첫 화면 -->
+<section class="page-section" id="members">
+    <div class="container px-4 px-lg-5" id="members_container_1">
+        <h2 class="text-center mt-0"><strong>변호사</strong></h2>
         <hr class="divider" />
         <div class="row gx-4 gx-lg-5">
             <div class="col-lg-4 col-md-6 text-center">
                 <div class="mt-5">
                     <div class="mb-2">
                         <a href="#lawyer_1">
-                            <img class="img-fluid" src="{% static 'assets/img/profile/jimmy.jpg' %}" alt="..." />
+                            <img class="img-fluid rounded" src="{% static 'assets/img/profile/jimmy.jpg' %}"
+                                alt="..." />
                         </a>
                     </div>
-                    <h3 class="h4 mb-2">지미 맥길</h3>
+                    <a href="#lawyer_1">
+                        <h3 class="h4 mb-2">지미 맥길</h3>
+                    </a>
                     <p class="text-muted mb-0">대표변호사</p>
                 </div>
             </div>
@@ -27,10 +30,12 @@
                 <div class="mt-5">
                     <div class="mb-2">
                         <a href="#lawyer_2">
-                            <img class="img-fluid" src="{% static 'assets/img/profile/kim.jpg' %}" alt="..." />
+                            <img class="img-fluid rounded" src="{% static 'assets/img/profile/kim.jpg' %}" alt="..." />
                         </a>
                     </div>
-                    <h3 class="h4 mb-2">킴 웩슬러</h3>
+                    <a href="#lawyer_1">
+                        <h3 class="h4 mb-2">킴 웩슬러</h3>
+                    </a>
                     <p class="text-muted mb-0">구성원 변호사</p>
                 </div>
             </div>
@@ -38,17 +43,158 @@
                 <div class="mt-5">
                     <div class="mb-2">
                         <a href="#lawyer_3">
-                            <img class="img-fluid" src="{% static 'assets/img/profile/howard.jpg' %}" alt="..." />
+                            <img class="img-fluid rounded" src="{% static 'assets/img/profile/howard.jpg' %}"
+                                alt="..." />
                         </a>
                     </div>
-                    <h3 class="h4 mb-2">하워드</h3>
+                    <a href="#lawyer_3">
+                        <h3 class="h4 mb-2">하워드 햄린</h3>
+                    </a>
                     <p class="text-muted mb-0">구성원 변호사</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<hr class="divider" />
+
+<!-- 첫번째 변호사 프로필 -->
 <section class="page-section" id="lawyer_1">
-    <div>지미맥길</div>
+    <div class="container px-4 px-lg-5" id="members_container_2">
+
+        <ul class="list-group list-group-flush">
+
+            <li class="list-group-item">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <a href="#lawyer_1">
+                            <img class="mb-3 img-fluid rounded" src="{% static 'assets/img/profile/jimmy.jpg' %}"
+                                alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <p class="text-muted mb-0">대표 변호사</p>
+                        <h3 class="h4 mt-3 mb-3"><strong>지미 맥길</strong></h3>
+                        <p class="member_key_introduction">전 법무법인 태평양 변호사</p>
+                        <div class="mb-3 text-muted">jimmymcgill@bettercallsaul.com</div>
+                        <div class="text-muted">
+                            <p><span class="rounded-circle member_tel px-1">T</span> 02-111-1111</p>
+                            <p><span class="rounded-circle member_tel px-1">F</span> 02-111-1111</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <h3 class="h5 mt-3 mb-2"><strong>학력</strong></h3>
+                <div class="text-muted list-text">
+                    안양고등학교<br>
+                    서울대학교<br>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <h3 class="h5 mt-3 mb-3"><strong>주요 경력</strong></h3>
+                <div class="text-muted list-text">
+                    사법시험 51회 합격<br>
+                    사법연수원 41기 수료<br>
+                    전 법무법인 태평양 변호사<br>
+                </div>
+            </li>
+        </ul>
+    </div>
 </section>
+
+<hr class="divider" />
+
+<!-- 두번째 변호사 프로필 -->
+<section class="page-section" id="lawyer_2">
+    <div class="container px-4 px-lg-5" id="members_container_2">
+
+        <ul class="list-group list-group-flush">
+
+            <li class="list-group-item">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <a href="#lawyer_2">
+                            <img class="mb-3 img-fluid rounded" src="{% static 'assets/img/profile/kim.jpg' %}"
+                                alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <p class="text-muted mb-0">구성원 변호사</p>
+                        <h3 class="h4 mt-3 mb-3"><strong>킴 웩슬러</strong></h3>
+                        <p class="member_key_introduction">전 법무법인 태평양 변호사</p>
+                        <div class="mb-3 text-muted">jimmymcgill@bettercallsaul.com</div>
+                        <div class="text-muted">
+                            <p><span class="rounded-circle member_tel px-1">T</span> 02-111-1111</p>
+                            <p><span class="rounded-circle member_tel px-1">F</span> 02-111-1111</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <h3 class="h5 mt-3 mb-2"><strong>학력</strong></h3>
+                <div class="text-muted list-text">
+                    안양고등학교<br>
+                    서울대학교<br>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <h3 class="h5 mt-3 mb-3"><strong>주요 경력</strong></h3>
+                <div class="text-muted list-text">
+                    사법시험 51회 합격<br>
+                    사법연수원 41기 수료<br>
+                    전 법무법인 태평양 변호사<br>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<hr class="divider" />
+
+<!-- 세번째 변호사 프로필 -->
+<section class="page-section" id="lawyer_3">
+    <div class="container px-4 px-lg-5" id="members_container_2">
+
+        <ul class="list-group list-group-flush">
+
+            <li class="list-group-item">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <a href="#lawyer_3">
+                            <img class="mb-3 img-fluid rounded" src="{% static 'assets/img/profile/howard.jpg' %}"
+                                alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <p class="text-muted mb-0">구성원 변호사</p>
+                        <h3 class="h4 mt-3 mb-3"><strong>하워드 햄린</strong></h3>
+                        <p class="member_key_introduction">전 법무법인 태평양 변호사</p>
+                        <div class="mb-3 text-muted">jimmymcgill@bettercallsaul.com</div>
+                        <div class="text-muted">
+                            <p><span class="rounded-circle member_tel px-1">T</span> 02-111-1111</p>
+                            <p><span class="rounded-circle member_tel px-1">F</span> 02-111-1111</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <h3 class="h5 mt-3 mb-2"><strong>학력</strong></h3>
+                <div class="text-muted list-text">
+                    안양고등학교<br>
+                    서울대학교<br>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <h3 class="h5 mt-3 mb-3"><strong>주요 경력</strong></h3>
+                <div class="text-muted list-text">
+                    사법시험 51회 합격<br>
+                    사법연수원 41기 수료<br>
+                    전 법무법인 태평양 변호사<br>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
 {% endblock %}
