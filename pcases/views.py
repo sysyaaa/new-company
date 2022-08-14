@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def pcaseview(request):
+
+    return render(request, "pcases.html")

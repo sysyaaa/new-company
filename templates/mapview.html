@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- Navigation-->
+{% include "partial/mainnav.html" %}
+
+<!-- 지도 -->
+<header class="mapviewhead">
+    <div class="container px-4 px-lg-5 h-100">
+        <h2 class="text-center text-white mt-0"><strong>오시는 길</strong></h2>
+    </div>
+    <hr class="divider" />
+</header>
+
+<section class="page-section" id="firm_map">
+    <div class="container px-4 px-lg-5 text-center">
+        <div class="row justify-content-center">
+            <iframe class="embed-responsive-item mt-3 mb-5 border-top border-dark border-2"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.5221316511456!2d127.00902939454312!3d37.49560171544001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1692bde86d1%3A0xf2150855542128b4!2z64Sl7Iqk7Yq4642w7J207ISc7LSIMe2YuOygkA!5e0!3m2!1sko!2skr!4v1659878050056!5m2!1sko!2skr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center ">
+            <div class="col-lg-8 col-xl-6 border-top border-dark border-2">
+                <table class="table">
+                    <tbody>
+                        <tr class="px-2">
+                            <th scope="row"> 주소</td>
+                            <td style="text-align:left"> 서울특별시 서초구 서초중앙로 156 블루원빌딩</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"> 대중교통</td>
+                            <td style="text-align:left"> 2, 3호선 교대역 6번 출구 도보 3분<br> (법원 동문 앞 맞은 편 도보 1분) </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"> 자동차</td>
+                            <td style="text-align:left"> 주차 가능</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% include "partial/footer.html" %}
+
+{% endblock %}

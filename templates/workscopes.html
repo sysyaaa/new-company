@@ -5,42 +5,55 @@
 {% block content %}
 
 <!-- Navigation-->
-{% include "partial/partnav.html" %}
+{% include "partial/mainnav.html" %}
 
 <!-- 업무 분야 -->
+<header class="workscopehead">
+    <div class="container px-4 px-lg-5 h-100">
+        <h2 class="text-center text-white mt-0"><strong>업무 분야</strong></h2>
+    </div>
+    <hr class="divider" />
+</header>
 <section class="page-section" id="workscopes">
-    <div class="container px-4 px-lg-5">
-        <h2 class="text-center mt-0"><strong>업무 분야</strong></h2>
-        <hr class="divider" />
+    <div class="container px-4 px-lg-5 py-5">
         <div class="row gx-4 gx-lg-5">
             <div class="col-lg-3 col-md-6 text-center">
-                <div class="mt-5">
-                    <div class="mb-2"><i class="bi-people-fill fs-1 text-primary"></i></div>
-                    <h3 class="h4 mb-2">민사</h3>
-                    <p class="text-muted mb-0">오랜 기간 축적된 풍부한 경험과 전문지식을 바탕으로 최상의 결과를 보장합니다.</p>
-                </div>
+                <a href="#civil_intro">
+                    <div class="mt-5 workscope_item">
+                        <div class="mb-2"><i class="bi-people-fill fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">민사 사건</h3>
+                        <p class="text-muted mb-0">오랜 기간 축적된 풍부한 경험과 전문지식을 바탕으로 최상의 결과를 보장합니다.</p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
-                <div class="mt-5">
-                    <div class="mb-2"><i class="bi-person-badge-fill fs-1 text-primary"></i></div>
-                    <h3 class="h4 mb-2">형사</h3>
-                    <p class="text-muted mb-0">10년 이상 경력의 형사 전문 변호사가 경찰 단계부터 검찰 단계, 법원 단계에 이르기까지 신속하게 대응하여 최적의 결과를 이끌어
-                        냅니다.</p>
-                </div>
+                <a href="#criminal_intro">
+                    <div class="mt-5 workscope_item">
+                        <div class="mb-2"><i class="bi-person-badge-fill fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">형사 사건</h3>
+                        <p class="text-muted mb-0">10년 이상 경력의 형사 전문 변호사가 경찰 단계부터 검찰 단계, 법원 단계에 이르기까지 신속하게 대응하여 최적의 결과를
+                            이끌어
+                            냅니다.</p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
-                <div class="mt-5">
-                    <div class="mb-2"><i class="bi-house fs-1 text-primary"></i></div>
-                    <h3 class="h4 mb-2">가사</h3>
-                    <p class="text-muted mb-0">가사 사건의 특수성을 잘 이해하여 민감한 사안에서도 최적의 솔루션을 제공합니다. </p>
-                </div>
+                <a href="#family_intro">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-house fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">가사 사건</h3>
+                        <p class="text-muted mb-0">가사 사건의 특수성을 잘 이해하여 민감한 사안에서도 최적의 솔루션을 제공합니다. </p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
-                <div class="mt-5">
-                    <div class="mb-2"><i class="bi-flag fs-1 text-primary"></i></div>
-                    <h3 class="h4 mb-2">행정</h3>
-                    <p class="text-muted mb-0">정부 부처 출신 변호사가 고유의 노하우와 경험으로 최적의 솔루션을 제공합니다.</p>
-                </div>
+                <a href="#authority_intro">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-flag fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">행정 사건</h3>
+                        <p class="text-muted mb-0">정부 부처 출신 변호사가 고유의 노하우와 경험으로 최적의 솔루션을 제공합니다.</p>
+                    </div>
+                </a>
             </div>
 
         </div>
@@ -53,29 +66,206 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
-                <div class="mt-5">
-                    <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                    <h3 class="h4 mb-2">M & A</h3>
-                    <p class="text-muted mb-0">국내외 다수 회사 간 M&A 자문 경험을 바탕으로 신속&#183;정확하게 종합적인 자문을 제공합니다.</p>
-                </div>
+                <a href="#ma_intro">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">M & A</h3>
+                        <p class="text-muted mb-0">국내외 다수 회사 간 M&A 자문 경험을 바탕으로 신속&#183;정확하게 종합적인 자문을 제공합니다.</p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
-                <div class="mt-5">
-                    <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                    <h3 class="h4 mb-2">기업자문</h3>
-                    <p class="text-muted mb-0">10년 이상의 경력을 가진 기업 전문 변호사가 국내&#183;외 고객의 수요에 따라 맞춤 서비스를 제공합니다.</p>
-                </div>
+                <a href="#company_intro">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">기업 법무</h3>
+                        <p class="text-muted mb-0">10년 이상의 경력을 가진 기업 전문 변호사가 국내&#183;외 고객의 수요에 따라 맞춤 서비스를 제공합니다.</p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
-                <div class="mt-5">
-                    <div class="mb-2"><i class="bi-building fs-1 text-primary"></i></div>
-                    <h3 class="h4 mb-2">건설&#183;부동산</h3>
-                    <p class="text-muted mb-0">다수의 건설 회사 자문 경험과 부동산 투자 관련 자문 경험을 바탕으로 고객이 필요로 하는 솔루션을 제공합니다.</p>
-                </div>
+                <a href="#construction_intro">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-building fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">건설&#183;부동산</h3>
+                        <p class="text-muted mb-0">다수의 건설 회사 자문 경험과 부동산 투자 관련 자문 경험을 바탕으로 고객이 필요로 하는 솔루션을 제공합니다.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
-    <div class="container px-4 px-lg-5">
 </section>
+
+<!-- 민사 -->
+
+<section class="page-section" id="civil_intro">
+    <div class="container px-4 px-lg-5">
+        <h3 class="h3 mb-5"><strong>민사 사건</strong></h3>
+        <h5 class="h5 mb-3"><strong>민사 일반</strong></h5>
+        <p class="text-muted mb-0"> 민사소송 좀 칩니다</p>
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>보전처분&#183;강제집행</strong></h5>
+        <p class="text-muted mb-0"> 보전 강제집행도 좀 칩니다</p>
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>주요 업무 사례</strong></h5>
+        <p class="text-muted mb-2"> - 대여금 반환 소송&#183약정금 청구 소송 </p>
+        <p class="text-muted mb-2"> - 손해배상청구 </p>
+        <p class="text-muted mb-2"> - 주택임대차 및 상가임대차 관련 분쟁</p>
+        <p class="text-muted mb-2"> - </p>
+        <p class="text-muted mb-2"> - </p>
+        <hr class="divider-gray">
+    </div>
+</section>
+
+<section class="page-section" id="criminal_intro">
+    <div class="container px-4 px-lg-5">
+        <h3 class="h3 mb-5"><strong>형사 사건</strong></h3>
+        <h5 class="h5 mb-3"><strong>경찰&#183;검찰 수사단계 대응</strong></h5>
+        <p class="text-muted mb-0"> 신속한 대응 합니다</p>
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>형사 재판</strong></h5>
+        <p class="text-muted mb-1"> 의뢰인 별 최적화된 형사소송 전략 수립합니다</p>
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>주요 업무 사례</strong></h5>
+        <p class="text-muted mb-2"> - 교통사고, 음주운전</p>
+        <p class="text-muted mb-2"> - 사기, 횡령 등 재산범죄</p>
+        <p class="text-muted mb-2"> - 강제추행, 강간 등 성범죄</p>
+        <p class="text-muted mb-2"> - 보이스피싱</p>
+        <p class="text-muted mb-2"> - 살인, 상해, 폭행 등 강력 범죄</p>
+        <hr class="divider-gray">
+    </div>
+</section>
+<section class="page-section" id="family_intro">
+    <div class="container px-4 px-lg-5">
+        <h3 class="h3 mb-5"><strong>가사 사건</strong></h3>
+        <h5 class="h5 mb-3"><strong>이혼</strong></h5>
+        <p class="text-muted mb-0"> 소설 잘씁니다. 재산분할 잘합니다.</p>
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>상속&#183;유류분</strong></h5>
+        <p class="text-muted mb-1">재산 잘찾습니다. 역시 소설 잘씁니다.</p>
+
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>주요 업무 사례</strong></h5>
+        <p class="text-muted mb-2"> - </p>
+        <p class="text-muted mb-2"> - </p>
+        <p class="text-muted mb-2"> - </p>
+        <p class="text-muted mb-2"> - </p>
+        <p class="text-muted mb-2"> - </p>
+        <hr class="divider-gray">
+    </div>
+</section>
+<section class="page-section" id="authority_intro">
+    <div class="container px-4 px-lg-5">
+        <h3 class="h3 mb-5"><strong>행정 사건</strong></h3>
+        <h5 class="h5 mb-3"><strong>행정심판</strong></h5>
+        <p class="text-muted mb-0"> 경우에 따라서는 소송보다 행정심판 유리</p>
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>행정소송</strong></h5>
+        <p class="text-muted mb-1"> 의뢰인 별 최적화된 형사소송 전략 수립합니다</p>
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>주요 업무 사례</strong></h5>
+        <p class="text-muted mb-2"> - 각종 행정처분 취소 소송</p>
+        <p class="text-muted mb-2"> - </p>
+        <p class="text-muted mb-2"> - </p>
+        <p class="text-muted mb-2"> - </p>
+        <p class="text-muted mb-2"> - </p>
+        <hr class="divider-gray">
+    </div>
+</section>
+
+<section class="page-section" id="finance_intro">
+    <div class="container px-4 px-lg-5">
+        <h3 class="h3 mb-5"><strong>금융</strong></h3>
+        <h5 class="h5 mb-3"><strong>PF</strong></h5>
+        <p class="text-muted mb-0"> 거래구조 검토, 계약서 작성, 담보 설정 </p>
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>투자 자문</strong></h5>
+        <p class="text-muted mb-1"> 신주 인수 등 투자 전반에 대해 자문, 외국인투자도 자문</p>
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>주요 업무 사례</strong></h5>
+        <p class="text-muted mb-2"> - </p>
+        <p class="text-muted mb-2"> - </p>
+        <hr class="divider-gray">
+    </div>
+</section>
+<section class="page-section" id="ma_intro">
+    <div class="container px-4 px-lg-5">
+        <h3 class="h3 mb-5"><strong>M & A</strong></h3>
+        <h5 class="h5 mb-3"><strong>거래구조 자문</strong></h5>
+        <p class="text-muted mb-0"> 의뢰인에게 적합한 거래구조를 조언합니다.</p>
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>법률 실사</strong></h5>
+        <p class="text-muted mb-1"> 다수의 실사 경험 바탕으로 빠르고 정확한 법률실사서비스를 제공합니다.</p>
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>계약서</strong></h5>
+        <p class="text-muted mb-1"> M&A 당사자 간의 협상 내용을 반영하여 향후 분쟁이 발생하지 않도록 명료한 계약서를 작성합니다.</p>
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>주요 업무 사례</strong></h5>
+        <p class="text-muted mb-2"> - 외국 기업의 국내 상장 기업에 대한 투자와 관련한 실사 및 관련 계약서 작성 및 자문</p>
+        <p class="text-muted mb-2"> - 국내 기업 간 합병 절차 자문 및 관련 계약서 작성</p>
+
+        <hr class="divider-gray">
+    </div>
+</section>
+<section class="page-section" id="company_intro">
+    <div class="container px-4 px-lg-5">
+        <h3 class="h3 mb-5"><strong>기업 법무</strong></h3>
+        <h5 class="h5 mb-3"><strong>계약서 검토</strong></h5>
+        <p class="text-muted mb-0"> 회사가 어떤 리스크 없이 안심하고 영업을 수행하기 위해서는 회사가 체결하는 다양한 계약들에 대한 사전 검토가 필수적입니다.</p>
+        <p class="text-muted mb-0"> 법무법인 은 대형 로펌 출신의 변호사들이 다년 간 다양하고 광범위한 분야의 회사들에 대한 자문 수행 경험을 바탕으로, 회사의 실정과 거래 현실에 맞는
+            현실적이고 체계적인 조언을 드립니다.</p>
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>회사 설립 및 운영</strong></h5>
+        <p class="text-muted mb-1"> 법무법인 은 정관, 주주명부 작성, 회사 설립 등기 등 회사의 설립과 관련한 종합적인 원스톱 법률 서비스를 제공합니다.</p>
+        <p class="text-muted mb-1"> 또한 회사의 주요 의사 결정에 필요한 주주총회 결의, 이사회 결의 등과 관련한 자문을 제공합니다.</p>
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>노무 </strong></h5>
+        <p class="text-muted mb-1"> 임직원의 채용부터 퇴사까지 발생하는 다양한 노무 문제, 직장 내 괴롭힘 및 직장 내 성희롱, 임금 및 퇴직금 등과 관련한 분쟁 등에 관하여 상황에 맞는
+            신속한 법률 서비스를 제공합니다.</p>
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>기업 소송 </strong></h5>
+        <p class="text-muted mb-1"> 기업운영 과정에서 발생하는 다양한 분쟁들에 대해 다년간의 경험을 바탕으로 최적화된 분쟁 해결 솔루션을 제공합니다.</p>
+        <p class="text-muted mb-1"> 임직원의 횡령, 배임, 거래 관계에서 발생하는 사기, 영업활동에 대한 업무방해 등 기업 운영과 관련하여 발생하는 다양한 형사 사안에 대하여, 수사
+            단계부터 법원 공판 단계까지 책임 지고 최선의 법률 서비스를 제공합니다.</p>
+        <hr class="divider-gray">
+
+        <p class="text-muted mb-2"> - </p>
+        <p class="text-muted mb-2"> - </p>
+        <p class="text-muted mb-2"> - </p>
+        <p class="text-muted mb-2"> - </p>
+        <p class="text-muted mb-2"> - </p>
+        <hr class="divider-gray">
+    </div>
+</section>
+<section class="page-section" id="construction_intro">
+    <div class="container px-4 px-lg-5">
+        <h3 class="h3 mb-5"><strong>건설&#183;부동산</strong></h3>
+        <h5 class="h5 mb-3"><strong>재건축&#183;재개발 자문</strong></h5>
+        <p class="text-muted mb-0"> 일단 써놓음</p>
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>부동산 관련 대출</strong></h5>
+        <p class="text-muted mb-1"> PF의 다른 이름</p>
+        <hr class="divider-gray">
+        <h5 class="h5 mb-3"><strong>주요 업무 사례</strong></h5>
+        <p class="text-muted mb-2"> - </p>
+        <p class="text-muted mb-2"> - </p>
+
+        <hr class="divider-gray">
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% include "partial/footer.html" %}
 
 {% endblock %}

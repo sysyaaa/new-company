@@ -4,20 +4,30 @@
 
 {% block content %}
 <!-- Navigation-->
-{% include "partial/partnav.html" %}
+{% include "partial/mainnav.html" %}
+
+<!-- 변호사 소개 header-->
+
+<header class="memberhead">
+    <div class="container px-4 px-lg-5 h-100">
+        <h2 class="text-center text-white mt-0"><strong>변호사 소개</strong></h2>
+        <hr class="divider" />
+    </div>
+</header>
+
 
 <!-- 변호사 소개 첫 화면 -->
-<section class="page-section" id="members">
+<!-- <section class="page-section" id="members">
     <div class="container px-4 px-lg-5" id="members_container_1">
         <h2 class="text-center mt-0"><strong>변호사</strong></h2>
         <hr class="divider" />
         <div class="row gx-4 gx-lg-5">
             <div class="col-lg-4 col-md-6 text-center">
                 <div class="mt-5">
-                    <div class="mb-2">
+                    <div class="mb-2 lawyers_photo_111">
                         <a href="#lawyer_1">
-                            <img class="img-fluid rounded" src="{% static 'assets/img/profile/jimmy.jpg' %}"
-                                alt="..." />
+                            <img class="img-fluid rounded lawyers_photo"
+                                src="{% static 'assets/img/profile/jimmy.jpg' %}" alt="..." />
                         </a>
                     </div>
                     <a href="#lawyer_1">
@@ -30,7 +40,8 @@
                 <div class="mt-5">
                     <div class="mb-2">
                         <a href="#lawyer_2">
-                            <img class="img-fluid rounded" src="{% static 'assets/img/profile/kim.jpg' %}" alt="..." />
+                            <img class="img-fluid rounded lawyers_photo" src="{% static 'assets/img/profile/kim.jpg' %}"
+                                alt="..." />
                         </a>
                     </div>
                     <a href="#lawyer_1">
@@ -43,8 +54,8 @@
                 <div class="mt-5">
                     <div class="mb-2">
                         <a href="#lawyer_3">
-                            <img class="img-fluid rounded" src="{% static 'assets/img/profile/howard.jpg' %}"
-                                alt="..." />
+                            <img class="img-fluid rounded lawyers_photo"
+                                src="{% static 'assets/img/profile/howard.jpg' %}" alt="..." />
                         </a>
                     </div>
                     <a href="#lawyer_3">
@@ -55,15 +66,13 @@
             </div>
         </div>
     </div>
-</section>
-<hr class="divider" />
+</section> -->
+<!-- <hr class="divider" /> -->
 
 <!-- 첫번째 변호사 프로필 -->
 <section class="page-section" id="lawyer_1">
-    <div class="container px-4 px-lg-5" id="members_container_2">
-
+    <div class="container px-4 px-lg-5 py-5" id="members_container_2">
         <ul class="list-group list-group-flush">
-
             <li class="list-group-item">
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-4 col-md-6 text-center">

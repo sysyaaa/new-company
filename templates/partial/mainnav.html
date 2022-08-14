@@ -1,16 +1,16 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#page-top">법무법인 베터콜사울</a>
+        <a class="navbar-brand" href="/">법무법인 베터콜사울</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
             aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#about">소개</a></li>
-                <li class="nav-item"><a class="nav-link" href="#workscopes">업무 분야</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'introductions:introduction' %}">소개</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'workscopes:workscope_list' %}">업무 분야</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'members:member' %}">구성원</a></li>
-                <li class="nav-item"><a class="nav-link" href="#firm_map">업무 사례</a></li>
-                <li class="nav-item"><a class="nav-link" href="#firm_map">오시는 길</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'pcases:pcase' %}">업무 사례</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'introductions:mapview' %}">오시는 길</a></li>
             </ul>
         </div>
     </div>
