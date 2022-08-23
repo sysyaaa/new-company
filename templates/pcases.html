@@ -7,7 +7,7 @@
 <!-- Navigation-->
 {% include "partial/mainnav.html" %}
 
-<!-- 업무 사례 -->
+<!-- 업무 사례 헤더 -->
 <header class="workscopehead">
     <div class="container px-4 px-lg-5 h-100">
         <h2 class="text-center text-white mt-0"><strong>업무 사례</strong></h2>
@@ -15,12 +15,82 @@
     <hr class="divider" />
 </header>
 
+<!-- 업무 사례 본문 -->
 
 
+<section class="page-section" id="prevcases_section">
+    {% for pcase in pcase_list %}
+        <div class="container px-4 px-lg-5 py-5 mb-5 border border-3 rounded-3" id="intro_container_1">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-3 text-center">
+                    <a href="{{pcase.image.url}}">
+                        <img class="img-fluid rounded intro_img1" src="{{pcase.image.url}}" alt="..." />
+                    </a>
+                </div>
+                <div class="col-md-9 text-start">
+                    <h3 class="h4 mt-3 mb-3"><strong>{{pcase.subject}}</strong></h3>
+                    <p class="text-muted mb-3">{{pcase.create_date}}</p>
+                    <p class="text-muted mb-3" id="pcase_content">{{pcase.content}}</p>
+                    <a class="btn btn-outline-dark" href="{% url 'pcases:detail' pcase.pk %}" role="button">더 보기</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</section>
 
+    <ul class="pagination justify-content-center mb-5">
+    <!-- 이전 페이지 -->
+        {% if pcase_list.has_previous %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{pcase.previous_page_number}}">
+            이전
+            </a>
+        </li>
+    
+        {% else %}
+        <li class="page-item disabled">
+            <a class="page-link" tabindex="-1" aria-disabled="true" href="#">
+            이전
+            </a>
+        </li>
 
+        {% endif %}
 
+    <!-- 페이지 리스트 -->
+        {% for page_number in pcase_list.paginator.page_range %}
+        
+        {% if page_number >= pcase_list.number|add:-5 and page_number <= pcase_list.number|add:5 %}
 
+            {% if page_number == pcase_list.number %}
+            <li class="page-item active" aria-current = "page">
+                <a class="page-link" href="?page={{page_number}}">
+                    {{page_number}}
+                </a>
+            </li>
+            {% else %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{page_number}}">
+                    {{page_number}}
+                </a>
+            </li>
+            {% endif %}
+        {% endif %}
+        {% endfor %}    
+    <!-- 다음 페이지 -->
+        {% if pcase_list.has_next %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{pcase.next_page_number}}">
+            다음
+            </a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <a class="page-link" tabindex="-1" aria-disabled="true" href="#">
+            다음
+            </a>
+        </li>
+         {% endif %}
+    </ul>
 
 {% include "partial/footer.html" %}
 

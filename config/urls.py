@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path("", include("introductions.urls"), name="introductions"),
@@ -22,5 +24,8 @@ urlpatterns = [
     path("members/", include("members.urls"), name="members"),
     path("pcases/", include("pcases.urls"), name="pcases"),
     path("workscopes/", include("workscopes.urls"), name="workscopes"),
-    # path("intro/", include("introductions.urls"), name="introductions"),
+    # static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
 ]
+
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

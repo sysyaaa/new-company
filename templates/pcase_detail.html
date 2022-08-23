@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- Navigation-->
+{% include "partial/mainnav.html" %}
+
+<!-- 업무 사례 헤더 -->
+<header class="workscopehead">
+    <div class="container px-4 px-lg-5 h-100">
+        <h2 class="text-center text-white mt-0"><strong>업무 사례</strong></h2>
+    </div>
+    <hr class="divider" />
+</header>
+
+
+<!-- 업무 사례 본문 -->
+<section class="page-section">
+    <div class="container px-4 px-lg-5 py-5 mb-5 border border-3 rounded-3">
+        <h3 class="h4 mt-3 mb-3"><strong>{{pcase.subject}}</strong></h3>
+        <p class="text-muted mb-3">{{pcase.create_date}}</p>
+        <p class="text-muted mb-3" id="pcase_content">{{pcase.content}}</p>
+    </div>
+</section>
+{% include "partial/footer.html" %}
+
+{% endblock %}

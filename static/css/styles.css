@@ -12286,6 +12286,11 @@ hr.divider-gray {
   max-width: 5rem;
 }
 
+hr.divider-gray-center {
+
+  background-color: var(--bs-gray);
+}
+
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -12371,7 +12376,7 @@ header.masthead {
   /* background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg"); */
   /* background: linear-gradient(#786657cc, #786657cc), url("../assets/img/bg-masthead.jpg"); */
   /* background: linear-gradient(#808080cc, #808080cc), url("../assets/img/bg-masthead.jpg"); */
-  background: linear-gradient(#303233cc, #303233cc), url("../assets/img/banner-4.png");
+  background: linear-gradient(#303233cc, #303233cc), url("../assets/img/building5.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12593,7 +12598,7 @@ header.masthead .h1 {
   padding-bottom: calc(10rem - 5.5rem);
   background-position: center;
   background-repeat: no-repeat;
-  background: linear-gradient(#303233cc, #303233cc), url("../assets/img/building4.jpg");
+  background: linear-gradient(#303233cc, #303233cc), url("../assets/img/building.jpg");
   /* background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg"); */
   background-attachment: scroll;
   background-size: cover;
@@ -12627,4 +12632,15 @@ header.masthead .h1 {
 
 .intro_img1 {
   background: linear-gradient(#786657cc, #786657cc)
+}
+
+/* 업무 사례 페이지 */
+
+#pcase_content {
+  height: 4.2em;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

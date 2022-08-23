@@ -5,4 +5,5 @@ app_name = "pcases"
 
 urlpatterns = [
     path("", views.pcaseview, name="pcase"),
+    path("<int:pk>", views.pcase_detailview, name="detail"),
 ]
